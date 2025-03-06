@@ -1,16 +1,16 @@
-import java.util.Scanner;  // mengimpor Scanner untuk membaca input dari pengguna
-import java.time.LocalDate; // mengimpor LocalDate untuk mendapatkan tahun saat ini
+import java.util.Scanner;  // mengimpor scanner untuk membaca input dari pengguna
+import java.time.LocalDate; // mengimpor localdate untuk mendapatkan tahun saat ini
 
 public class Main {
     public static void main(String[] args) {
-        // membuat objek Scanner untuk membaca input dari pengguna
+        // untuk membaca input dari pengguna
         Scanner scanner = new Scanner(System.in);
 
-        // meminta pengguna memasukkan nama5
+        // meminta pengguna memasukkan nama
         System.out.print("Masukkan nama: ");
         String nama = scanner.nextLine();
 
-        // meminta pengguna memasukkan jenis kelamin dengan huruf 'P' (Perempuan) atau 'L' (Laki-laki)
+        // meminta pengguna memasukkan jenis kelamin dengan huruf 'P' atau 'L'
         System.out.print("Masukkan jenis kelamin (P/L): ");
         char jenisKelamin = scanner.next().charAt(0);
 
@@ -18,7 +18,7 @@ public class Main {
         System.out.print("Masukkan tahun lahir: ");
         int tahunLahir = scanner.nextInt();
 
-        // menutup Scanner setelah selesai membaca input untuk menghindari kebocoran sumber daya
+        // menutup scanner setelah membaca input untuk menghindari kebocoran
         scanner.close();
 
         // mengambil tahun sekarang dari sistem komputer
